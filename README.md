@@ -1,4 +1,4 @@
-<img src="./source/img/context.png" alt="logo" width="200" style="margin:auto;display:block"/>
+<img src="./source/img/context.png" alt="logo" width="800" style="margin:auto;display:block"/>
 
 The code provided in this git repository allows for the reproduction of the results presented in the paper "Exploring the Direct and Indirect Environmental Impacts of Mobile Health – A Case Study on Continuous Glucose Monitoring," published as part of the ICT4S 2025 conference. It primarily relies on functions developed by the [lca algebraic](https://github.com/oie-mines-paristech/lca_algebraic) library, which itself builds upon [brightway2](https://docs.brightway.dev/en/latest/).
 
