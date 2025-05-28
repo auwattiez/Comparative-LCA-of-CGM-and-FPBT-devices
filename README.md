@@ -1,5 +1,19 @@
-# Comparative-LCA-of-CGM-and-FPBT-devices
-Comparative life cycle assessment of two glucose monitoring devices.
+<img src="./doc/source/img/context.png" alt="logo" width="200" style="margin:auto;display:block"/>
+
+The code provided in this git repository allows for the reproduction of the results presented in the paper "Exploring the Direct and Indirect Environmental Impacts of Mobile Health – A Case Study on Continuous Glucose Monitoring," published as part of the ICT4S 2025 conference. It primarily relies on functions developed by the [lca algebraic](https://github.com/oie-mines-paristech/lca_algebraic) library, which itself builds upon [brightway2](https://docs.brightway.dev/en/latest/).
+
+Our warmest thanks go to the contributors of these two libraries, without whom this work would not have been possible.
+
+Two additional custom functions are needed to read the lifecycle data contained in the life_cycle_data.xlsx file. These functions, included in the external_functions.py file, help streamline parameter creation and make it easier to locate activities.
+
+Please note that a license for the ecoinvent database is required, as it served as the LCI data source for this study.
+
+
+# Installation
+
+(blablabla)
+
+= TALK ABOUT FOREGROUNDS
 
 The CGM and FPBT devices are modeled in the Excel file "data", where foreground modeling is highlighted in yellow.
 
