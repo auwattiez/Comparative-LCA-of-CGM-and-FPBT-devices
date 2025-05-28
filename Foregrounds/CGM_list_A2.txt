@@ -1,0 +1,8 @@
+["CGM_dark_grey_plastic", "CGM_light_grey_plastic","CGM_inner_plastic_part_2","CGM_sticker","CGM_casing_top",
+        "CGM_casing_bottom","CGM_transparent_soft_plastic","CGM_opaque_hard_plastic","CGM_biosensor","CGM_IC1_frontend","CGM_IC2_frontend",
+        "CGM_IC1_backend","CGM_IC2_backend","CGM_battery_connector","CGM_antenna","CGM_SMD_cap_0603","CGM_SMD_cap_1005","CGM_SMD_cap_1608",
+        "CGM_SMD_res_0603","CGM_SMD_res_1005","CGM_SMD_res_1608","CGM_soldering","CGM_soldering_add","CGM_PWB","CGM_zinc_powder","CGM_silver_oxide_powder",
+        "CGM_external_protection_up","CGM_external_protection_down","CGM_Other_plastic_element","CGM_E_prod_bat","CGM_hard_needle","CGM_yellow_box_CGM",
+        "CGM_instructions_set_CGM","CGM_protective_foil_CGM","CGM_whole_package_CGM","CGM_CGM_T1","CGM_CGM_T2","CGM_CGM_T3","CGM_CGM_T4","CGM_CGM_T5",
+        "CGM_CGM_T6","CGM_CGM_T7","CGM_CGM_T8","CGM_CGM_T9","CGM_CGM_T10","CGM_CGM_T11"
+    ]

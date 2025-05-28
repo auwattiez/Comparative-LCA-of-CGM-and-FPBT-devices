@@ -1,0 +1,1 @@
+["CGM_blue_plastic","CGM_lighter_grey_plastic","CGM_transparent_plastic","CGM_inner_plastic_part_1","CGM_inner_plastic_part_3","CGM_inner_plastic_part_4","CGM_spring","Charger"]
