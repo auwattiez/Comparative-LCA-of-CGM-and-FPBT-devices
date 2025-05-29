@@ -1,35 +1,19 @@
 <img src="./source/img/context.png" alt="logo" width="800" style="margin:auto;display:block"/>
 
-The code provided in this git repository allows for the reproduction of the results presented in the paper "Exploring the Direct and Indirect Environmental Impacts of Mobile Health – A Case Study on Continuous Glucose Monitoring," published as part of the ICT4S 2025 conference. It primarily relies on functions developed by the [lca algebraic](https://github.com/oie-mines-paristech/lca_algebraic) library, which itself builds upon [brightway2](https://docs.brightway.dev/en/latest/).
+The code provided in this git repository allows for the reproduction of the results presented in the paper "Exploring the Direct and Indirect Environmental Impacts of Mobile Health – A Case Study on Continuous Glucose Monitoring," published as part of the ICT4S 2025 conference. It primarily relies on functions developed by the [lca algebraic](https://github.com/oie-mines-paristech/lca_algebraic) library, which itself builds upon [brightway2](https://docs.brightway.dev/en/latest/). Our warmest thanks go to the contributors of these two libraries, without whom this work would not have been possible.
 
-Our warmest thanks go to the contributors of these two libraries, without whom this work would not have been possible.
+The life-cycle data used to build the foreground systems for each scenario defined in the paper are stored in the Excel file life_cycle_data.xlsx, specifically in the sheets A0, A1, A2, A3, and B. This Excel file also includes the definitions of custom activities (absent from ecoinvent) developed to address the specific modeling needs of this case study. In addition, it identifies the ecoinvent activities that require modification, providing only the flows that need to be adjusted to improve representativeness within the context of the study.
 
-Two additional custom functions are needed to read the lifecycle data contained in the life_cycle_data.xlsx file. These functions, included in the external_functions.py file, help streamline parameter creation and make it easier to locate activities.
+This structure is intended to keep the data (in Excel) as separate as possible from the model assembly and computation (in the Jupyter Notebook), in order to improve manageability and enhance reproducibility and transparency.
 
-Please note that a license for the ecoinvent database is required, as it served as the LCI data source for this study.
+Two additional custom functions are required to read the lifecycle data from life_cycle_data.xlsx. These functions, located in external_functions.py, help streamline parameter creation and make it easier to identify and retrieve relevant activities.
 
+The foreground folder contains lists of activities that require different scaling factors depending on the scenario. For example, in scenario A2, flows related to the applicator must be distinguished from those associated with the CGM device.
+
+Please note that a license for the ecoinvent database is required, as it served as the LCI data source for this study. The version used for this work is ecoinvent 3.9.1.
 
 # Installation
 
-(blablabla)
+We recommend following the installation steps provided [here](https://github.com/oie-mines-paristech/lca_algebraic). To open the Jupyter Notebook included in this repository, you will also need to complete the optional step of installing Jupyter, as well as the notebook package.
+*Note: An error may occur when installing lca_algebraic on its own. In some cases, installing brightway2 first, followed by lca_algebraic, resolves the issue.*
 
-= TALK ABOUT FOREGROUNDS
-
-The CGM and FPBT devices are modeled in the Excel file "data", where foreground modeling is highlighted in yellow.
-
-- CGM devices: Scenario A0 represents the business-as-usual model, while A1–A3 explore ecodesign alternatives.
-- FPBT devices: Modeled under scenario B.
-
-The analysis follows a cradle-to-patient's-gate approach, including:
-
-- Environmental impact estimation in a typical case.
-- Contribution (hotspot) analysis.
-- Uncertainty analysis using the LCA algebraic package, built on top of Brightway 2.
-
-Relevant code/documents are structured as follows:
-
-- "modelling" notebook: Contains code specific to the LCA model.
-- "assumptions" document: Details key modeling assumptions.
-- "additional resources" folder: Includes extra scripts for inventory generation.
-
-To run the notebook, ensure a working environment for Brightway 2 and LCA algebraic. For installation guidance, please refer to this tutorial.
