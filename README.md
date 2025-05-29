@@ -14,6 +14,12 @@ Please note that a license for the ecoinvent database is required, as it served 
 
 # Installation
 
-We recommend following the installation steps provided [here](https://github.com/oie-mines-paristech/lca_algebraic). To open the Jupyter Notebook included in this repository, you will also need to complete the optional step of installing Jupyter, as well as the notebook package.
-*Note: An error may occur when installing lca_algebraic on its own. In some cases, installing brightway2 first, followed by lca_algebraic, resolves the issue.*
+To run the full code, you'll need a working Python environment with the following packages: brightway2 and lca_algebraic. For installing lca_algebraic, we recommend following the steps outlined [here](https://github.com/oie-mines-paristech/lca_algebraic).
 
+The modeling was developed using Jupyter Notebook. If you plan to use this interface, make sure to install both the jupyter and notebook packages.
+
+*Note: Installing lca_algebraic on its own may cause an error. In some cases, installing brightway2 first and then lca_algebraic resolves the issue.*
+
+# The code
+
+Once the required libraries are installed, the code is fully commented to explain the purpose of each cell. This setup allows you to selectively regenerate results, scenario by scenario.
